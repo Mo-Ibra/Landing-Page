@@ -1,0 +1,926 @@
+/*
+-------
+Global
+-------
+*/
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+ul{list-style: none;padding: 0;margin: 0;}
+
+a,
+a:hover{color: #000;text-decoration: none; color: #fff;}
+
+/*
+-------
+Basics Design
+-------
+*/
+
+body
+{
+    background-color: #fbf3ec;
+}
+
+/*
+-------
+Basics Design
+-------
+*/
+
+/*
+-------
+Start Nav Bar
+-------
+*/
+
+nav
+{
+    padding: 20px 0;
+    background: #fbf3ec;
+}
+
+nav > *,
+nav ul li
+{
+    display: inline-block;
+}
+
+nav .logo
+{
+    width: 30%;
+    margin-left: 20px;
+}
+
+nav .links
+{
+    width: 45%;
+}
+
+nav .links li
+{
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+nav .btns
+{
+    margin-right: 20px;
+}
+
+nav .btns button
+{
+    margin-right: 10px;
+}
+
+nav .btns button:first-of-type
+{
+    color: #101621;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    border: none;
+    background: none;
+}
+
+nav .btns button:last-of-type
+{
+    font-family: Rubik,sans-serif;
+    line-height: 56px;
+    padding: 0 35px;
+    color: #fff;
+    background: #655c97;
+    border: none;
+}
+
+/*
+-------
+End Nav Bar
+-------
+*/
+
+
+/*
+------------
+Start Header
+------------
+*/
+
+header
+{
+    padding: 80px 0;
+    background-color: #fbf3ec;
+}
+
+header h1
+{
+    font-family: 'Roboto Slab',serif;
+    font-size: 85px;
+    line-height: 1.14em;
+    color: #101621;
+    font-weight: 400;
+    position: relative;
+}
+
+header h1 span::before
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 75%;
+    height: 25px;
+    background: rgba(241,193,83,.4);
+    left: 0;
+    top: 65px;
+}
+
+header h1 + p
+{
+    color: #565657;
+    font-size: 28px;
+    margin: 20px 0;
+    line-height: 1.4em;
+}
+
+header button
+{
+    border: 0;
+    padding: 15px 40px;
+    background-color: #655c97;
+    color: white;
+    font-weight: 500;
+}
+
+header img + p
+{
+    text-align: right;
+    font-size: 20px;
+    color: #000;
+    padding-top: 30px;
+    font-weight: 400;
+}
+
+header img + p span
+{
+    text-decoration: underline;
+    color: #973C56;
+    font-size: 1.6em;
+    font-weight: 450;
+}
+
+/*
+------------
+End Header
+------------
+*/
+
+
+/*
+-----------------
+Start Features
+-----------------
+*/
+
+.features
+{
+    padding: 80px 0;
+}
+
+.features .container
+{
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.features .container .row > div:nth-child(2)
+{
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.features img
+{
+    display: block;
+    margin: 10px auto 20px;
+}
+
+.features span
+{
+    font-size: 18px;
+    color: rgba(0,0,0,.3);
+    padding: 15px 0 20px;
+}
+
+.features p
+{
+    font-size: 24px;
+    line-height: 1.45em;
+    color: #000;
+    margin: 20px 30px;
+}
+
+/*
+-----------------
+End Features
+-----------------
+*/
+
+/*
+--------------
+Start Producer
+--------------
+*/
+
+.producer
+{
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.producer #firstSpan
+{
+    font-size: 24px;
+    color: #a09a92;
+    padding-bottom: 20px;
+}
+
+.producer #firstSpan p
+{
+    color: #000;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.producer h2
+{
+    font-family: 'Roboto Slab',serif;
+    font-size: 54px;
+    line-height: 1.25em;
+    font-weight: 500;
+    position: relative;
+}
+
+.producer h2 span::before
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 25px;
+    background: rgba(241,193,83,.4);
+    left: 0;
+    top: 40px;
+}
+
+.producer p
+{
+    font-size: 24px;
+    color: #0e0e0e;
+    line-height: 1.58em;
+    padding-top: 40px;
+}
+
+.producer p:last-of-type
+{
+    font-style: italic;
+}
+
+/*
+--------------
+End Producer
+--------------
+*/
+
+
+/*
+--------------
+Start launch
+--------------
+*/
+
+.launch
+{
+    padding: 80px 0;
+    background-color: #dff1ee;
+}
+
+.launch .title > span
+{
+    font-size: 20px;
+    color: rgba(0,0,0,.35);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.launch .title h2
+{
+    font-family: 'Roboto Slab',serif;
+    font-size: 54px;
+    line-height: 1.25em;
+    margin-bottom: 120px;
+}
+
+.launch .title h2 span
+{
+    position: relative;
+}
+
+.launch .title h2 span::before
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 25px;
+    background: rgba(241,193,83,.4);
+    left: 0;
+    top: 40px;
+}
+
+.launch .row .col-md-4 img
+{
+    display: block;
+    margin: auto;
+}
+
+.launch .row .col-md-4:first-of-type span
+{
+    padding: 30px 0 0px;
+}
+
+.launch .row .col-md-4 span
+{
+    display: block;
+    font-size: 20px;
+    color: rgba(0,0,0,.35);
+    margin: 20px 0 15px;
+}
+
+.launch .row .col-md-4 p
+{
+    font-size: 23px;
+    line-height: 1.52em;
+    color: #000;
+    margin: 0px 20px;
+}
+
+/*
+--------------
+End launch
+--------------
+*/
+
+/*
+--------------
+Start Why-Us
+--------------
+*/
+
+.why-us
+{
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.why-us .title p
+{
+    font-size: 20px;
+    color: rgba(0,0,0,.35);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+}
+
+.why-us .title h2
+{
+    font-family: 'Roboto Slab',serif;
+    font-size: 54px;
+    line-height: 1.25em;
+    margin-bottom: 40px;
+}
+
+.why-us .title h2 span
+{
+    position: relative;
+    display: block;
+}
+
+.why-us .title h2 span::before
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 67%;
+    height: 25px;
+    background: rgba(241,193,83,.4);
+    left: 0;
+    top: 40px;
+}
+
+.why-us .question h3
+{
+    text-align: left;
+    margin: 22px 70px 22px 0;
+    font-family: Rubik,sans-serif;
+    font-size: 30px;
+    line-height: 1.4em;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.why-us .question h3::after
+{
+    content: ">>";
+    font-family: font-awesome;
+    position: absolute;
+    font-size: 28px;
+    right: 0px;
+    top: 30%;
+    transition: all 0.3s ease-in-out 0s;
+    display: none;
+}
+
+.why-us .question p
+{
+    font-size: 20px;
+    line-height: 1.55em;
+    width: 90%;
+    color: #73737B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.why-us .question hr
+{
+    width: 90%;
+}
+
+/*
+--------------
+End Why-Us
+--------------
+*/
+
+/*
+-----------------
+Start Our-Pricing
+-----------------
+*/
+
+.our-pricing
+{
+    padding: 80px 0;
+    background-color: #fdecd8;
+}
+
+.our-pricing .title span
+{
+    font-size: 20px;
+    color: rgba(0,0,0,.35);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.our-pricing .title h2
+{
+    font-family: 'Roboto Slab',serif;
+    font-size: 54px;
+    line-height: 1.25em;
+    margin: 0px auto 80px;
+    width: 70%
+}
+
+.our-pricing .card
+{
+    padding: 20px 0;
+}
+
+.our-pricing .card .card-body
+{
+    
+}
+
+.our-pricing .card .card-body .card-title h5
+{
+    font-size: 32px;
+    position: relative;
+}
+
+.our-pricing .card .card-body .card-title h5::before
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 52%;
+    height: 15px;
+    background: rgba(212, 253, 241, 0.5);
+    left: 75px;
+    top: 23px;
+}
+
+.our-pricing .card .card-body .card-title h2
+{
+    font-size: 65px;
+    margin: 24px 0 0;
+    line-height: initial;
+}
+
+.our-pricing .card .card-body .card-title span
+{
+    font-size: 24px;
+}
+
+.our-pricing .card .card-body .card-text
+{
+    margin: 40px 0;
+}
+
+.our-pricing .card .card-body .card-text p
+{
+    font-family: Rubik,sans-serif;
+    font-size: 17px;
+    color: #464646;
+    margin-left: 20px;
+}
+
+.our-pricing .card .card-body .card-text p i
+{
+    margin-right: 5px;
+}
+
+.our-pricing .card .card-body .card-text p.disabled
+{
+    color: #b9b9b9;
+}
+
+/* the Button in the End of Card */
+.our-pricing .card .card-body button
+{
+    border: 2px solid #655c97;
+    background: none;
+    color: #655c97;
+    width: 95%;
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.our-pricing .card .card-body button:hover
+{
+    background-color: #655c97;
+    color: #fff;
+}
+
+
+/*
+-----------------
+End Our-Pricing
+-----------------
+*/
+
+
+/*
+-------------------
+Start Testimonials
+-------------------
+*/
+
+.testimonials
+{
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.testimonials .title h2
+{
+    font-family: 'Roboto Slab',serif;
+    font-size: 54px;
+    line-height: 1.25em;
+    margin-bottom: 80px;
+}
+
+.testimonials .title h2 span
+{
+    display: block;
+    position: relative;
+}
+
+.testimonials .title h2 span::before
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 48%;
+    height: 15px;
+    background: rgba(241,193,83,.4);
+    left: 290px;
+    top: 40px;
+}
+
+.testimonials .testimonials-slider div p
+{
+    font-family: Rubik,sans-serif;
+    font-size: 28px;
+    line-height: 1.71em;
+    color: rgba(0,0,0,.8);
+    margin: 0 auto 40px;
+    width: 80%;
+}
+
+.testimonials .testimonials-slider .client h3
+{
+    font-weight: 550;
+}
+
+.testimonials .testimonials-slider .client span
+{
+    color: #a8afae;
+    font-size: 18px;
+    font-weight: 450;
+}
+
+/* Change Slider Options */
+
+.testimonials .bx-controls-direction
+{
+    display: none;
+}
+
+.testimonials .bx-wrapper
+{
+    border: none;
+    box-shadow: none;
+}
+
+.testimonials .bx-pager-item
+{
+    margin: 0 5px;
+}
+
+/* Change Slider Options */
+
+/*
+-------------------
+End Testimonials
+-------------------
+*/
+
+/*
+----------
+Start FAQ
+----------
+*/
+
+.faq
+{
+    padding: 80px 0;
+    background-color: #dff1ee;
+}
+
+.faq .title > span
+{
+    font-size: 20px;
+    color: rgba(0,0,0,.35);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+    color: #ddd;
+}
+
+.faq .title > h2
+{
+    font-family: 'Roboto Slab',serif;
+    font-size: 54px;
+    line-height: 1.25em;
+    margin-bottom: 80px;
+}
+
+.faq .title > h2 span
+{
+    position: relative;
+}
+
+.faq .title > h2 span::before
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: rgba(241,193,83,.4);
+    left: 0px;
+    top: 40px;
+}
+
+.faq .quest
+{
+    background-color: #fff;
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px 0;
+}
+
+.faq .quest p
+{
+    margin-left: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-family: Rubik,sans-serif;
+    font-size: 24px;
+    color: #101621;
+}
+
+.faq .quest p::after
+{
+
+}
+
+.faq .quest span
+{
+    display: block;
+    margin-left: 20px;
+    color: #7b7b83;
+    font-weight: 450;
+    font-size: 18px;
+    margin: 20px 0 20px 20px;
+    display: none;
+}
+
+.faq .quest span.show
+{
+    display: block;
+}
+
+.faq .contact h3
+{
+    margin-top: 60px;
+    font-size: 34px;
+}
+
+.faq .contact button
+{
+    border: none;
+    background: #655c97;
+    color: white;
+    padding: 15px 40px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/*
+----------
+End FAQ
+----------
+*/
+
+/*
+----------------
+Start getStarted
+----------------
+*/
+
+.getStarted
+{
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.getStarted .title > h2
+{
+    font-family: 'Roboto Slab',serif;
+    font-size: 54px;
+    line-height: 1.25em;
+}
+
+.getStarted .title > h2 span
+{
+    position: relative;
+}
+
+.getStarted .title > h2 span::before
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: rgba(241,193,83,.4);
+    left: 0px;
+    top: 40px;
+}
+
+.getStarted .title > p
+{
+    font-size: 28px;
+    line-height: 1.32em;
+    color: #000;
+    text-align: center;
+    width: 60%;
+    margin: 30px auto;
+}
+
+.getStarted .register input
+{
+    width: 60%;
+    height: 70px;
+    margin: 20px auto;
+    text-indent: 40px;
+    border: 2px solid #000;
+}
+
+.getStarted .register button
+{
+    display: block;
+    border: none;
+    background: #655c97;
+    padding: 15px 40px;
+    margin: 0px auto 30px;
+}
+
+.getStarted .register p
+{
+    color: #a8afae;
+}
+
+.getStarted .register p span
+{
+    cursor: pointer;
+    color: #000;
+}
+
+.getStarted .register p span:hover
+{
+    text-decoration: underline;
+}
+
+
+/*
+----------------
+End getStarted
+----------------
+*/
+
+/*
+----------------
+Start Footer
+----------------
+*/
+
+footer
+{
+    padding: 80px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer img
+{
+    margin-bottom: 10px;
+}
+
+footer a
+{
+    color: #000;
+    display: block;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+footer a:hover
+{
+    color: #655c97;
+    text-decoration: underline;
+}
+
+footer h2
+{
+    margin-bottom: 20px;
+}
+
+footer ul li
+{
+    margin: 10px 0;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+footer ul li:hover
+{
+    text-decoration: underline;
+    color: #655c97;
+}
+
+/*
+----------------
+End Footer
+----------------
+*/

@@ -1,0 +1,231 @@
+/*
+-------
+Start
+-------
+*/
+
+.loginSection
+{
+    padding: 80px 0;
+    background: linear-gradient(90deg, #f8fafe 50%, #ffffff 50%);
+}
+
+.loginSection .theImages
+{
+    height: 100%;
+    position: relative;
+}
+
+.loginSection .theImages img:first-of-type
+{
+    width: 100%;
+    height: 100%;
+}
+
+.loginSection .theImages img:nth-of-type(2)
+{
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    z-index: 1;
+    width: 60%;
+    animation: jumpTwo 5s infinite linear;
+}
+
+.loginSection .theImages img:nth-of-type(3)
+{
+    position: absolute;
+    bottom: 2%;
+    left: 59%;
+    z-index: 1;
+    width: 40%;
+    animation: jumpThree 5s infinite linear;
+}
+
+.loginSection .theImages h2
+{
+    margin-bottom: 80px;
+}
+
+.loginSection .theImages h2 span
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.loginSection .theImages h2 span:hover
+{
+    color: #6f55ff;
+}
+
+.loginForm
+{
+    overflow: hidden;
+    margin-left: 5%;
+    width: 45%;
+}
+
+.loginForm .logo
+{
+    float: left;
+
+}
+
+.loginForm .goHome 
+{
+    text-align: right;
+}
+
+.loginForm .goHome a
+{
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+.loginForm .goHome a:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+
+.loginForm > h2
+{
+    margin: 80px 0 20px;
+    font-family: gilroy-bold;
+    font-size: 58px;
+    line-height: 1.17em;
+    font-weight: bolder;
+}
+
+.loginForm > p
+{
+    font-size: 22px;
+}
+
+.loginForm > p span
+{
+    text-decoration: underline;
+    color: #6f55ff;
+    cursor: pointer;
+}
+
+.loginForm > form label
+{
+    display: block;
+}
+
+.loginForm .name,
+.loginForm .email,
+.loginForm .password
+{
+    margin: 40px 0;
+}
+
+.loginForm .name label,
+.loginForm .email label,
+.loginForm .password label
+{
+    color: #bfbfbf;
+    margin-bottom: 5px;
+}
+
+.loginForm .name input,
+.loginForm .email input,
+.loginForm .password input
+{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    text-indent: 5px;
+    border-bottom: 2px solid #000;
+    -webkit-transition: all 0.5 ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.loginForm .name input::placeholder,
+.loginForm .email input::placeholder,
+.loginForm .password input::placeholder
+{
+    color: #bfbfbf;
+    font-size: 20px;
+}
+
+.loginForm .name input:focus,
+.loginForm .email input:focus,
+.loginForm .password input:focus
+{
+    border-bottom: 2px solid #6f55ff;
+}
+
+.loginForm .keep
+{
+    display: block;
+}
+
+.loginForm .keep input
+{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.loginForm .keep label
+{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.loginForm form > button
+{
+    width: 100%;
+    background-color: #6f55ff;
+    margin: 40px 0;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 5px;
+    -webkit-transition: all 0.5 ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.loginForm form > button:hover
+{
+    background-color: #FFB840;
+}
+
+.loginForm .copy
+{
+    text-align: center;
+    color: #bfbfbf;
+}
+
+/*
+----
+End
+----
+*/
+
+/* Animation */
+
+@-webkit-keyframes jumpTwo {
+    0%   {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+    40%  {-webkit-transform: translate3d(0,20px,0);transform: translate3d(0,20px,0);}
+    100% {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+}
+  @keyframes jumpTwo {
+    0%   {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+    40%  {-webkit-transform: translate3d(0,20px,0);transform: translate3d(0,20px,0);}
+    100% {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+}
+  @-webkit-keyframes jumpThree {
+    0%   {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+    40%  {-webkit-transform: translate3d(0,-20px,0);transform: translate3d(0,-20px,0);}
+    100% {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+}
+  @keyframes jumpThree {
+    0%   {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+    40%  {-webkit-transform: translate3d(0,-20px,0);transform: translate3d(0,-20px,0);}
+    100% {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+}
+
+/* Animation */
